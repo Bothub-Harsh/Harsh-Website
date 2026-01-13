@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #000000;
+}
+
+header a {
+  width: 90px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  background: #ffffff;
+  border-radius: 50px;
+
+  margin-left: 12px;
+  transition: 0.3s;
+
+}
+
+
+header a:hover {
+  box-shadow:
+    0 0 6px rgba(0,180,255,1),
+    0 0 14px rgba(0,180,255,1),
+    0 0 28px rgba(160,90,255,1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer; 
+}
+
+.logo {
+  color:#ffffff;        /* text color (Harsh Meshram) */
+  display: flex;        /* puts image and text in one row */
+  align-items: center;  /* vertically centers them */
+  gap: 8px;             /* space between image and text */
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover; 
+  /* background: yellow; */
+  /* padding: 4px; */
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+
+  /* Premium gradient (slightly darker, elegant) */
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #142552
+  );
+
+  color: #E5E7EB; /* soft white, not harsh */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Depth & luxury */
+  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.35);
+}
+
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #0072ff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.services {
+  background: #f4f4f4;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.contacting {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;   /* center whole box horizontally */
+  align-items: center;       /* center whole box vertically */
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;    /* stack image + text */
+  align-items: center;       /* THIS centers logo perfectly */
+  text-align: center;
+}
+
+.contacting img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;       /* space below logo */
+}
+
+.contact-apps {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-apps img {
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-apps img:hover {
+  transform: scale(1.2);
+}
+
+.homelogo {
+ width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  margin-bottom: 20px;
+}
+.homelogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ✨ Glow on hover */
+.homelogo:hover {
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.6),
+    0 0 60px rgba(37, 99, 235, 0.35);
+  transform: scale(1.8);
+}
+
