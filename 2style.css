@@ -123,25 +123,35 @@ footer {
 }
 
 .contacting {
-  min-height: 15vh;
   display: flex;
-  justify-content: center;   /* center whole box horizontally */
-  align-items: center;       /* center whole box vertically */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  margin-bottom: 20px;
 }
+
+.contacting img {
+  width: 120px; 
+  height: 120px; 
+  border-radius: 50%;
+}
+
+.contacting:hover {
+  filter:
+    brightness(1.1)
+    drop-shadow(0 0 30px rgba(59,130,246,0.7))
+    drop-shadow(0 0 70px rgba(37,99,235,0.45));
+  transform: scale(1.8);
+} 
 
 .contact-box {
   display: flex;
   flex-direction: column;    /* stack image + text */
   align-items: center;       /* THIS centers logo perfectly */
   text-align: center;
-}
-
-.contacting img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;       /* space below logo */
+   overflow: visible;
+  
 }
 
 .contact-apps {
@@ -160,10 +170,11 @@ footer {
 
 .contact-apps img:hover {
   transform: scale(1.2);
+  
 }
 
 .homelogo {
- width: 160px;
+  width: 160px;
   height: 160px;
   border-radius: 50%;
   display: flex;
