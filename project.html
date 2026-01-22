@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+    <p>Built with AI • Python</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project 1</h2>
+        <p>AI Study Buddy – helps students learn with AI.</p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>Project 2</h2>
+        <p>PDF Q&A Chatbot using RAG.</p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>Project 3</h2>
+        <p>Sentence similarity search using embeddings.</p>
+        <a href="#">View Project</a>
+    </div>
+
+</div>
+
+</body>
+</html>
