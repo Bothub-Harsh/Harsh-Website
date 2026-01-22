@@ -98,13 +98,14 @@ header a:hover {
   font-weight: 600;
   text-decoration: none;
 
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 14px rgba(9, 4, 4,5.2);
   transition: all 0.2s ease;
 }
 
 .hero_button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+  box-shadow:
+    0 0 10px rgba(0, 170, 255, 0.8),
+    0 0 30px rgba(0, 170, 255, 0.8);
 }
 
 
