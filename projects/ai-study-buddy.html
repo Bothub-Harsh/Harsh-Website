@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Buddy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #38bdf8;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      margin-bottom: 30px;
+    }
+
+    .run-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #020617;
+      background: linear-gradient(135deg, #38bdf8, #22c55e);
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(56,189,248,0.6);
+      transition: all 0.3s ease;
+    }
+
+    .run-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px rgba(56,189,248,0.9);
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <h1>🤖 AI Study Buddy</h1>
+      <p>
+        An <b>AI-powered study assistant</b> that lets you chat with your own
+        PDFs and notes. Ask questions, get summaries, quizzes, and even use
+        voice input & output.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>✨ Features</h2>
+      <ul>
+        <li>Upload PDFs / notes</li>
+        <li>Chatbot-style Q&A</li>
+        <li>Summaries, explanations, quizzes</li>
+        <li>Voice input & voice output</li>
+        <li>Streamlit-based UI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛠 Tech Stack</h2>
+      <ul>
+        <li>Python</li>
+        <li>LangChain</li>
+        <li>OpenAI / Hugging Face</li>
+        <li>FAISS</li>
+        <li>Whisper</li>
+        <li>pyttsx3 / gTTS</li>
+        <li>Streamlit</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🧠 What I Learn</h2>
+      <ul>
+        <li>RAG (Retrieval-Augmented Generation)</li>
+        <li>Vector embeddings</li>
+        <li>Prompt engineering</li>
+        <li>Voice AI</li>
+        <li>End-to-end AI pipeline</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ How It Works</h2>
+      <ul>
+          <li>Upload a PDF or notes</li>
+          <li>Text is split into chunks</li>
+          <li>Chunks are converted into embeddings</li>
+          <li>Embeddings are stored in FAISS</li>
+          <li>User asks a question (text or voice)</li>
+          <li>Relevant chunks are retrieved (RAG)</li>
+          <li>LLM generates an accurate answer</li>
+          <li>Answer is shown and optionally spoken aloud</li>
+      </ul>
+    </div>
+
+    <!-- RUN BUTTON -->
+    <div class="center">
+      <a class="run-btn" href="https://your-live-app-link.com" target="_blank">
+        ▶ Run Project
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
